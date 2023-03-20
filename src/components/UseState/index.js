@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./UseState.css";
 
 const UseState = () => {
-  console.log(useState("light"));
+  const [theme, setTheme] = useState("light");
   return (
-    <div className="state">
+    <div className={theme}>
       <h1>UseState Component</h1>
       <button>Dark</button>
       <button>Light</button>
